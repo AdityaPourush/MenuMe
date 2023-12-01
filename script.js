@@ -71,7 +71,7 @@ async function getRecipies() {
     recipiesContainer.innerHTML = "";
     let search = document.querySelector("#search").value;
     console.log(search);
-    let searchUrl = "https://www.themealdb.com/api/json/v1/1/search.php?s=" + search;
+    let searchUrl = "https://www.themealdb.com/api/json/v1/1/filter.php?c=" + search;
 
     try {
         let response = await axios.get(searchUrl)
