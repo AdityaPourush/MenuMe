@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MenuMe: Your Ultimate Recipe Destination</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Page 1 -->
+        <div class="page1" id="page1">
+
+            <!-- Building Navbar -->
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./assets/icons8-recipe-64.png" alt="" />
+                    <p>MenuMe</p>
+                </div>
+
+                <div class="nav_middle">
+                    <a href="#page1">Home</a>
+                    <a>Recipes</a>
+                    <a>Favourites</a>
+                </div>
+
+                <div class="nav_right">
+                    <div id="about_container">
+                        <a href="#footer">About</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Building Page 1 Body-->
+            <div>
+                <div class="header">
+                    <div class="texts">
+                        <h2>
+                            Your Ultimate <br />
+                            Recipe Destination !
+                        </h2>
+
+                        <p>
+                            Whether you're seeking quick and easy meals or gourmet <br />
+                            culinary adventures, our recipe treasure trove will inspire you
+                            <br />
+                            to embark on a flavorful voyage like no other. Welcome to <br />
+                            the ultimate recipe destination.
+                        </p>
+                    </div>
+                    <div class="box">
+                        <div>
+                            <h4>300+</h4>
+                            <p>Recipes</p>
+                        </div>
+                        <div>
+                            <h4>500+</h4>
+                            <p>Ingredients</p>
+                        </div>
+                        <div>
+                            <h4>1-Lakh+</h4>
+                            <p>Monthly Visits</p>
+                        </div>
+                    </div>
+
+                    <div class="button_container">
+                        <div class="button1">
+                            <a href="#page2">Get Suggestion</a>
+                        </div>
+                        <div class="button2">
+                            <a href="#page3">Search</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./assets/Food-Plate-Top-View-Non-Veg-PNG-cropped.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="page_break"></div>
+        <!-- Page 2 -->
+        <div class="page2" id="page2">
+            <h3>Your Hunger !!! <br>
+                Our Choice 😎.....</h3>
+            <div class="cards">
+                <div class="refresh">
+                    <p>Get Another <img src="./assets/refresh-image.png" alt=""></p>
+                </div>
+                <div class="random_container">
+                    <!-- <img src="https://www.themealdb.com/images/media/meals/k29viq1585565980.jpg" alt="">
+                    <p id="meal_name">Chicken Quinoa Greek Salad</p>
+                    <p id="cuisine">Cuisine: Greek</p> -->
+                </div>
+                <div class="details">
+                    <p>More Details <img src="./assets/bulb-image.png" alt=""></p>
+                </div>
+            </div>
+            <div class="modal">
+                <div id="close"><img src="./assets/icons8-x-100.png" alt=""></div>
+                <div class="modal_content">
+                    <div class="modal_details">
+                        <div class="brief">
+                            <img src="https://www.themealdb.com/images/media/meals/k29viq1585565980.jpg" alt="">
+                            <p id="meal_name">Chicken Quinoa Greek Salad</p>
+                            <p id="cuisine">Cuisine: Greek</p>
+                        </div>
+                        <div id="ingredients">
+                            <h5>Ingredients</h5>
+                            <div class="modal_details_list">
+                                <ul id="ingredients_list">
+                                    <!-- <li></li>
+                                    <li></li> -->
+                                </ul>
+                                <ul id="measurements_list">
+                                    <!-- <li></li>
+                                    <li></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Instructions</h5>
+                    <div class="modal_details_text">
+                        <p>Text Here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page_break"></div>
+        <!-- Page 3 -->
+        <div class="page3" id="page3">
+            <div class="search">
+                <input type="text" placeholder="Search" id="search"></input>
+                <button id="search_button"><img src="./assets/search icon.png" alt="" id="search_icon_image"></button>
+            </div>
+            
+            <div class="reci">
+                <div class="recipes_container">
+                    <div class="meal">
+                        <!-- <img src="https://www.themealdb.com/images/media/meals/k29viq1585565980.jpg" alt="">
+                        <p id="meal_name">Salad</p>
+                        <p id="cuisine">Cuisine: Greek</p>
+                        <div id="grid_detail"><p>More Details</p></div> -->
+                    </div>
+                    <div class="meal">
+                        <!-- <img src="https://www.themealdb.com/images/media/meals/k29viq1585565980.jpg" alt=""> -->
+                    </div>
+                    <div class="meal">
+                        <!-- <img src="https://www.themealdb.com/images/media/meals/k29viq1585565980.jpg" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page_break"></div>
+        <footer id="footer">
+            <p>MenuMe : A project in which we have to fetch data from an API and then implement it in  a self - designed website.</p>
+            <p>Made by Aditya Raj Pourush</p>
+            <p>Github: <a href="https://github.com/AdityaPourush">Aditya Pourush</a></p>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

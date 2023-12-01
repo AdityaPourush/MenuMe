@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Page 1 Styles */
+.page1{
+    height: 120vh;
+}
+
+.page2{
+    height: 110vh;
+}
+
+.page1{
+    background: linear-gradient(270deg, #FFF 7.88%, #FF9061 104.09%, rgba(255, 255, 255, 0.00) 108.87%);
+}
+
+/* Styling Nav Bar */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 12vh;
+    width: 95vw;
+    margin: auto;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    align-items: center;
+    position: fixed;
+    top: 1vh;
+    /* z-index: 2; */
+
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.40);
+    border-radius: 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid #000;
+}
+
+.logo{
+    display: flex;
+    margin-left: 3vw;
+    align-items: center;
+}
+
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.logo p {
+    font-family: Kirang Haerang;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.nav_middle{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    font-family: poppins;
+}
+
+.nav_middle a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 1px;
+    color: #000;
+}
+
+.nav_middle a:hover{
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.nav_right{
+    margin-right: 4vw;
+}
+
+#about_container{
+    padding: 5px;
+    border-radius: 7px;
+    background: #FFC700;
+    width: 15vh;
+    height: 6vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-family: poppins;
+    filter: drop-shadow(10px 11px 5px rgba(0, 0, 0, 0.75));
+}
+
+#about_container:hover{
+    cursor: pointer;
+    background: #eeff00de;
+}
+
+#about_container a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Styling Header */
+
+.header{
+    padding-top: 17vh;
+}
+
+.texts{
+    width: 40vw;
+    margin-left: 6vw;
+}
+
+.texts h2 {
+    color: #000;
+    font-family: aladin;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.texts p {
+    font-family: poppins;
+    margin-top: -2vh;
+}
+
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    height: 17vh;
+    align-items: center;
+    border-radius: 15px;
+    background: #ff4d00;
+    box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.74);
+    margin: 5vh 0 0 6vw;
+    color: rgb(255, 255, 255);
+}
+
+.box div {
+    text-align: center;
+}
+
+.box h4{
+    font-family: aladin;
+    font-size: 25px;
+    line-height: 0px;
+}
+
+.box p {
+    font-family: poppins;
+    font-size: 12px;
+    line-height: 0px;
+}
+
+.button_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    margin: 10vh 0 0 6vw;
+
+}
+
+.button_container div {
+    text-align: center;
+    width: 12vw;
+    height: 8vh;
+    font-family: aladin;
+    background-color: #FFC700;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    box-shadow: 7px 7px 4px 0px rgba(0, 0, 0, 0.8);
+}
+
+.button_container div a {
+    text-decoration: none;
+    color: #000;
+}
+
+.button1, .button2 {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.button1 :hover, .button2 :hover{
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+.image{
+    position: absolute;
+    right: 2px;
+    top: 15vh;
+    z-index: 1;
+}
+
+/* Page 2 */
+.page2{
+    background: linear-gradient(294deg, #ff9629 0%, rgb(255 0 0 / 34%) 68.11%, rgb(255 0 0 / 0%) 99.03%);
+}
+
+#page2 h3{
+    margin: 0;
+    text-align: center;
+    padding: 3vh;
+    font-family: aladin;
+    font-size: 3.5vw;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+
+.refresh, .details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 10vh;
+    margin-top: 40vh;
+    background: #9B0000;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.refresh p, .details p{
+    font-family: poppins;
+    font-size: 1.5vw;
+}
+
+.refresh img, .details img {
+    width: 2vw;
+}
+
+.random_container{
+    width: 50vw;
+    background-color: burlywood;
+    text-align: center;
+    height: 75vh;
+    z-index: 1;
+}
+
+.random_container img{
+    width: 40vw;
+    height: 55vh;
+    z-index: 2;
+    position: relative;
+    top: -3vh;
+    border-radius: 10px;
+    box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.74);
+}
+
+#meal_name {
+    font-size: 4.5vh;
+}
+
+#meal_name, #cuisine{
+    line-height: 25px;
+
+}
+
+.random_container p {
+    font-family: poppins;
+}
+
+/* Styling Modal */
+
+.modal{
+    display: none;
+    margin: auto;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 15vw;
+    right: 15vw;
+    top: 15vh;
+    width: 70vw;
+    height: 80vh;
+    overflow: auto;
+    background-color: rgb(141, 121, 121);
+    font-family: poppins;
+    border-radius: 20px;
+    scroll-behavior: smooth;
+}
+
+#close img{
+    width: 6vh;
+    cursor: pointer;
+}
+
+#close{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -15vh;
+}
+
+.brief {
+    margin-left: 2vw;
+}
+
+.brief img{
+    width: 20vw;
+    height: 20vw;
+}
+
+.modal_details{
+    display: flex;
+}
+
+#ingredients{
+    margin-left: 10vw;
+}
+
+#ingredients h5{
+    margin-left: 3vw;
+    font-size: 2vw;
+    margin-top: -2vh;
+}
+
+.modal_details_list{
+    display: flex;
+    margin-top: -3vh;
+}
+
+#measurements_list li{
+    list-style-type: none;
+}
+
+.modal_content>h5{
+    margin-left: 2vw;
+    font-size: 1.5vw;
+}
+
+.modal_details_text{
+    margin: 2vw;
+}
+
+/* Page 3 */
+
+.page3{
+    text-align: center;
+    background: rgb(224,11,8);
+    background: linear-gradient(90deg, rgba(224,11,8,1) 0%, rgba(121,11,9,1) 37%, rgba(255,154,0,1) 100%);
+}
+
+.search{
+    padding-top: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input{
+    height: 8vh;
+    width: 25vw;
+    font-size: 3vh;
+    border: none;
+    font-family: poppins;
+    background-color:  white;
+    color: black;
+}
+
+#search_button{
+    /* margin-left: -5px; */
+    width: 10vw;
+    height: 8vh;
+    background-color: #FFC700;
+    border: solid 2px black;
+}
+
+#search_button img{
+    width: 7vh;
+    border: none;
+    /* height: 5vw; */
+}
+
+.recipes_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5vw;
+    row-gap: 7vw;
+}
+
+.reci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.meal{
+    width: 25vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.meal img {
+    width: 20vw;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: solid 2px black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#grid_detail{
+    background-color: rgba(163, 0, 0, 0.616);
+    width: 10vw;
+    margin: auto;
+    height: 4vh;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-family: poppins;
+    text-align: center;
+    margin-top: -16px;
+    margin-bottom: -16px;
+}
+
+/* Styling page-breaks */
+.page_break{
+    width: 100%;
+    height: 7px;
+    background-color: #D75959;;
+}
